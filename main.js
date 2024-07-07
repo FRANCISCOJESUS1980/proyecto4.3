@@ -1,6 +1,7 @@
 import './main.scss'
 
 const contenidoHTML = `
+ <body class="dark">
 <header class="header">
   <div class="switches">
     <div id="toggle-theme" class="toggle-theme">
@@ -202,7 +203,7 @@ const contenidoHTML = `
           <span class="project__tag">#CSS</span>
           <span class="project__tag">#Responsive</span>
         </div>
-        <h2 class="card__title">Landing Page</h2>
+        <h2 class="card__title">Proyecto 1</h2>
         <p class="card__text">Teniamos que hacer una landing page con HTML Y CSS en la que todo estuviese responsive y con buenas practicas</p>
         <p class="card__text">Este al ser mi primer proyecto y acababa de empezar fue el que mas me costo y mas trabajo me dio, por lo tanto es al que mas cariño le tengo</p>
       <div class="buttons">
@@ -221,7 +222,7 @@ const contenidoHTML = `
           <span class="project__tag">#JavaScript</span>
           <span class="project__tag">#Responsive</span>
         </div>
-        <h2 class="card__title">Landing Page</h2>
+        <h2 class="card__title">Proyecto 2</h2>
         <p class="card__text">En este proyecto nos pedian hacer una pagina, donde un usuario tenia unos productos para elegir, ademas debia tener un modal con un buscador</p>
         <p class="card__text">Este fue el segundo proyecto y el tema css y html se me dio muy rapido y bien, con el javascript ya tuve mas problemas, tambien le guardo un cariño especial porque fue le primero con javascript</p>
       <div class="buttons">
@@ -240,7 +241,7 @@ const contenidoHTML = `
           <span class="project__tag">#JavaScript</span>
           <span class="project__tag">#Responsive</span>
         </div>
-        <h2 class="card__title">Landing Page</h2>
+        <h2 class="card__title">Proyecto 3</h2>
         <p class="card__text">Este proyecto consistia en saber utilizar las Apis y hacerle peticiones segun el criterio del usuario</p>
         <p class="card__text">El tercer proyecto, excepto la parte de las Api que era la primera vez que la hacia el resto fue bastante bien y rapido, por ahora creo mi mejor proyecto tanto en maquetacion como en funcionalidad y estructuracion</p>
       <div class="buttons">
@@ -250,6 +251,7 @@ const contenidoHTML = `
     </article>
   </section>
 </main>
+</body>
 `
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -262,6 +264,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const toggleColors = document.getElementById('toggle-colors')
   const rootStyles = document.documentElement.style
+  document.body.classList.add('dark')
+  toggleIcon.src = './assets/icons.svg/soleado.png'
+  toggleText.textContent = 'Light Mode'
 
   toggleTheme.addEventListener('click', () => {
     document.body.classList.toggle('dark')

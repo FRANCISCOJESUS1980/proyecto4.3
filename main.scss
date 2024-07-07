@@ -99,7 +99,7 @@ body.dark {
 }
 @media screen and (min-width: 720px) {
   .main {
-    grid-template-columns: min-content 1fr;
+    grid-template-columns: min-content 2fr;
   }
 }
 .column {
@@ -269,6 +269,12 @@ body.dark {
   width: 275px;
 }
 @media screen and (min-width: 760px) {
+  .project__tags {
+    width: 325px;
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 760px) {
   .project__tags {
     width: 325px;
     font-size: 0.8rem;
